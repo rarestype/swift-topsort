@@ -4,6 +4,7 @@ import PackageDescription
 let package: Package = .init(
     name: "swift-topsort",
     products: [
+        .library(name: "TopologicalSorting", targets: ["TopologicalSorting"]),
     ],
     dependencies: [
     ],
@@ -20,9 +21,9 @@ let package: Package = .init(
         ),
     ]
 )
-for target: PackageDescription.Target in package.targets {
+for target: Target in package.targets {
     {
-        var settings: [PackageDescription.SwiftSetting] = $0 ?? []
+        var settings: [SwiftSetting] = $0 ?? []
 
         settings.append(.enableUpcomingFeature("ExistentialAny"))
         settings.append(.define("DEBUG", .when(configuration: .debug)))
