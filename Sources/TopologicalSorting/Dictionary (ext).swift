@@ -60,9 +60,6 @@ extension Dictionary where Key: Comparable, Value: Identifiable<Key> {
             }
         }
 
-        //  Nodes may depend on packages we did not clone. This is completely
-        //  normal and expected when packages have things like SPM plugins that
-        //  don’t get built by default.
         for id: Key in dependents.keys where self.keys.contains(id) {
             return nil
         }
