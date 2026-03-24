@@ -1,6 +1,6 @@
 <div align="center">
 
-⌛ &nbsp; **swift-topsort** &nbsp; ⏳
+🎾 &nbsp; **swift-topsort** &nbsp; 🎾
 
 topological sorting in pure swift
 
