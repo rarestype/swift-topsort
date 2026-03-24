@@ -8,6 +8,7 @@ let package: Package = .init(
         .library(name: "TopologicalSorting", targets: ["TopologicalSorting"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/ordo-one/dollup", from: "1.0.1"),
     ],
     targets: [
         .target(
